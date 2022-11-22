@@ -1,0 +1,18 @@
+.rt img
+{
+    border-radius: 15px;
+    margin: 2%;
+    width: 45%;
+}
+
+.rt button
+{
+    width: 45%;
+}
+
+.rt p
+{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5em;
+    color: #de5a37;
+}

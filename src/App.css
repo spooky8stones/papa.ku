@@ -1,0 +1,426 @@
+.main
+{
+    width: 100vw;
+    height: 100vh;
+}
+
+.modal
+{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.4);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.modal.active
+{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal__content
+{
+    padding: 20px;
+    border-radius: 12px;
+    background-color: white;
+    transform: scale(0.5);
+    transition: 0.4s all;
+    width: 80%;
+}
+
+.modal__content.active
+{
+    transform: scale(1);
+}
+
+.wrapper
+{
+    display: flex;
+    justify-content: center;
+    height: 64vh;
+}
+
+.wrapRegister
+{
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+}
+
+.header
+{
+    height: 16vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    box-shadow: 10px 5px 5px grey;
+}
+
+.headerImg
+{
+    height: 15vh;
+    margin: 1vw;
+}
+
+.message
+{
+    margin: 2vw;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3em;
+}
+
+label
+{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5em;
+    display: block;
+}
+
+ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+li
+{
+    padding-bottom: 5%;
+}
+
+input
+{
+    padding: 5px;
+    border-radius: 5px;
+    width: 60vmin;
+}
+
+.footer
+{
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.reg_buttons
+{
+    margin-top: 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.regon
+{
+    margin: 0 2vw;
+    color: #0c63e4;
+    cursor: pointer;
+}
+
+.regon:hover
+{
+    margin-top: 2px;
+    text-decoration: underline;
+}
+
+.slide
+{
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    position: absolute;
+
+}
+
+.slideSidesLeft
+{
+    overflow: auto;
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2vw;
+    background: black;
+    position: absolute;
+    right: 100vw;
+}
+
+.slideSidesRight
+{
+    overflow: auto;
+    width: 60vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2vw;
+    background-color: orange;
+    position: absolute;
+    left: 100vw;
+
+}
+
+.priceStyle
+{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1em;
+    color: black;
+
+}
+
+.styleCard
+{
+    margin-bottom: 2vh;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 1vw;
+    background-color: white;
+}
+
+div .priceStyle p
+{
+    margin: 0;
+    padding: 1vw;
+    font-size: 1.5em;
+}
+
+.imgProd
+{
+    transition: 0.5s;
+    transform: scale(1);
+    width: 100%;
+}
+
+.imgProd1
+{
+    transition: 0.5s;
+    transform: scale(2);
+    width: 100%;
+}
+
+.imgPlace
+{
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+}
+
+.menuButton
+{
+    margin: 1vh;
+    cursor: pointer;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+}
+
+.point
+{
+
+    border-radius: 15px;
+    background-color: white;
+    color: red
+}
+.sliInfo
+{
+    width: 100%;
+}
+
+.greeting
+{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5em;
+    color: orange;
+}
+
+.ingredietsChoose
+{
+    display: block;
+    font-size: 1.2em;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 1vw;
+    margin: 2vw auto;
+    align-items: center;
+    background-color: #e3e3e3;
+    box-shadow: 2px 2px 2px grey
+}
+
+.ingredietsChoose1
+{
+    display: block;
+    font-size: 1.2em;
+    border-width: 1px;
+    border-style: dotted;
+    border-radius: 20px;
+    padding: 1vw;
+    margin: 2vw auto;
+    align-items: center;
+    background-color: white;
+}
+
+.buttonSpace
+{
+    font-family: 'Bebas Neue', cursive;
+    width: 46vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.buyButton
+{
+    width: 40%;
+    font-size: 1.2em;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 2%;
+    margin: 2vh auto;
+    text-align: center;
+}
+
+.unselect
+{
+    filter: invert(100%);
+    width: 3vh;
+}
+
+.ingDel
+{
+    text-decoration: line-through;
+}
+
+.submitIngr
+{
+    width: 1.5em;
+    height:1.5em;
+    background-color: olive;
+    border-radius: 50%
+}
+
+.submitIngr1
+{
+    width: 1.5em;
+    height:1.5em;
+    background-color: white;
+    border-radius: 50%
+}
+
+.countOrder
+{
+    width: 2em;
+    height: 2em;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.countOrder1
+{
+    width: 1.5em;
+    height: 1.5em;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.lala
+{
+    background-color: #B9DEAF;
+}
+
+.waiterist
+{
+    color: black;
+    font-family: 'Bangers', cursive;
+    font-size: 1.2em;
+    margin: auto 2px;
+}
+
+.leftStyle
+{
+    width: 36vw;
+}
+
+.jumpCart
+{
+    animation-name: jumping;
+    animation-duration: 0.5s;
+    animation-fill-mode: backwards;
+}
+@keyframes jumping {
+    0%
+    {
+        width: 15vw;
+    }
+    25%
+    {
+        width: 20vw;
+        transform: rotate(30deg);
+    }
+    50%
+    {
+        width: 15vw;
+        transform: rotate(-30deg);
+    }
+    75%
+    {
+        width: 20vw;
+        transform: rotate(30deg);
+    }
+    100%
+    {
+        width: 10vw;
+    }
+}
+
+.triangle
+{
+    text-align: center;
+    margin: 0 auto 2vh;
+    width: 0; height: 0;
+    border-top: 2vh solid white;
+    border-left: 4vh solid transparent;
+    border-right: 4vh solid transparent;
+}
+
+.stoped
+{
+    display: none
+}
+
+.rocker
+{
+    background-color: saddlebrown;
+    border-radius: 0 0 5px 5px;
+}
+
+.langChose
+{
+    padding: 0;
+    cursor: pointer;
+}
+/*.orderChose*/
+/*{*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    margin: 5px;*/
+/*    flex-wrap: wrap;*/
+/*    border: 4px solid olive;*/
+/*    border-radius: 10px;*/
+/*    padding: 5px;*/
+/*    background-color: white;*/
+/*}*/
